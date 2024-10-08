@@ -23,3 +23,9 @@ code {
 body {
   margin: 10px
 }
+nav {
+  display: flex;
+  background-color: aquamarine;
+  text-align: right;
+}
+#new { }

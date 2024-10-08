@@ -1,6 +1,6 @@
 import React from 'react';
-import { WallPaper } from "./Image-data";
-import Nav from "./Nav";
+import { WallPaper } from "../Image-data";
+import Nav from "../Components/Nav";
 
 export default function Start() {
 
@@ -20,7 +20,6 @@ export default function Start() {
     return (
         <body>
             <h1>This Is the wallpaper site hope you have fun</h1>
-            {Nav()}
             <div id="image-container">
                 {console.log(typeof (WallPaper))}
                 {newData}
