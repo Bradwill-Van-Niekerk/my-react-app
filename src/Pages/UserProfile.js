@@ -1,43 +1,42 @@
 import React, {useEffect, useState} from "react";
 import {useParams} from 'react-router-dom';
-import UserData from '../userData'
+import userData from '../userData'
 
 export default function UserProfile() {
-    const {username}= useParams()
+    const {username}= useParams() //to get username from url
     const [profile, setProfile] = useState(null);
     useEffect(() => {
-        //simulate fetching user data
-        const fetchProfile = async () =>{
-            //Here you would fetch data from an API
-            setProfile({name: username, bio: 'This is a user bio.'});
-        };
-        fetchProfile()
+       //find username by matching to name or surname
+       const user = userData.find(user => user.name.toLowerCase() === username.toLowerCase());
+       if (user){
+        setProfile(user);//if user is found set profile to stat of user
+       } else {
+        setProfile(null); // no user found profile will be set to null
+       }
     }, [username]);
-    // if (UserData.name === useParams()){
-    const newData = UserData[0].map((items) => {
-        return (
-            <div key={items.id}>
-                <div>
-                    {/* <img id="images" src={items.savedItems.src} /> */}
-                    {items.savedItems}
-                    
-                </div>
-                <div>
-                    {/* <p>{items.savedItems.name}</p> */}
-                </div>
-                {console.log(username)}
-            </div>
-        )
-    })
-    return(
+    
+    if (!profile) {
+        return <div>
+            Profile not found
+        </div>;
+    }
+
+    return (
         <div>
-            
-            <h1>
-                User Profile: {profile ? profile.name: 'Loading...'}
-            </h1>
-            <p>{profile? profile.bio: ''}</p>
-            <div>{newData}</div>
+            <h1> User Profile: {profile.name} {profile.surname}</h1>
+            <h2>Saved Items:</h2>
+            <div>
+                {profile.savedItems.length > 0 ? (
+                    profile.savedItems.map((savedItem) => (
+                        <div key={savedItem.id}>
+                            <img src={savedItem.src} alt={savedItem.name} style={{width:"15rem", height: "15rem"}}/>
+                            <p>{savedItem.name}</p>
+                            </div>
+                    ))
+                ):(
+                    <p>No Saved items</p>
+                )}
+            </div>
         </div>
     );
 }
-

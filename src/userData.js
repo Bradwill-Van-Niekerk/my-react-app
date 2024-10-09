@@ -1,4 +1,4 @@
-const UsersData = [
+const UsersData= [
     {
         name: "Jeff",
         surname: "Jones",
@@ -15,12 +15,12 @@ const UsersData = [
         id: 2,
         savedItems: [
             {
-                scr: "https://i.postimg.cc/Hs6YwNG9/Anime-illastration-Night-Sky.jpg",
+                src: "https://i.postimg.cc/Hs6YwNG9/Anime-illastration-Night-Sky.jpg",
                 name: "Anime illastration Night Sky",
                 id: 3
             },
             {
-                scr: "https://i.postimg.cc/9XtFMMJS/Anime-illastration-Raining-Ally.jpg",
+                src: "https://i.postimg.cc/9XtFMMJS/Anime-illastration-Raining-Ally.jpg",
                 name: "Anime illastration Raining Ally",
                 id: 4
             },
@@ -31,7 +31,7 @@ const UsersData = [
         surname: "kavendish",
         id: 3,
         savedItems: [{
-            scr: "https://i.postimg.cc/PrXf8j7q/Anime-illastration.jpg",
+            src: "https://i.postimg.cc/PrXf8j7q/Anime-illastration.jpg",
             name: "Anime Illastration",
             id: 1
         }],
@@ -41,7 +41,7 @@ const UsersData = [
         surname: "september",
         id: 4,
         savedItems: [{
-            scr: "https://i.postimg.cc/PrXf8j7q/Anime-illastration.jpg",
+            src: "https://i.postimg.cc/PrXf8j7q/Anime-illastration.jpg",
             name: "Anime Illastration",
             id: 1
         }],

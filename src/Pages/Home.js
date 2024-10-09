@@ -1,6 +1,5 @@
 import React from 'react';
 import { WallPaper } from "../Image-data";
-import Nav from "../Components/Nav";
 
 export default function Start() {
 
@@ -8,7 +7,7 @@ export default function Start() {
         return (
             <div >
                 <div>
-                    <img id="images" src={items.scr} />
+                    <img id="images" src={items.scr} alt ={items.name}/>
                 </div>
                 <div>
                     <p>{items.name}</p>

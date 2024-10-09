@@ -9,7 +9,8 @@ export default function Nav() {
                 Home
             </Link>
             <Link to="/about">About</Link>
-            <Link to="/user/Jeff">User Profile</Link>
+            <Link to="/user/jeff">User Profile</Link>
+
         </nav>
     )
 }
