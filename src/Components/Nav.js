@@ -14,7 +14,7 @@ export default function Nav() {
   }, []);
     return (
         <nav>
-            <Link to="/">
+            <Link to="/home">
                 Home
             </Link>
             <Link to="/about">About</Link>

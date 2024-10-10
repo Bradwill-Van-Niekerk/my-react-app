@@ -8,7 +8,7 @@ export default function Start() {
         return (
             <div >
                 <div>
-                    <img id="images" src={items.scr} alt ={items.name}/>
+                    <img id="images" src={items.src} alt ={items.name}/>
                     <p>{items.name}</p>
                 </div>
             </div>

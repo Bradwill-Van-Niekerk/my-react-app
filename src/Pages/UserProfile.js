@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {useParams} from 'react-router-dom';
+import {Link, useParams} from 'react-router-dom';
 import userData from '../userData'
 import Nav from "../Components/Nav";
 
@@ -26,13 +26,13 @@ export default function UserProfile() {
         <div>
              <Nav/>
             <h1> User Profile: {profile.name} {profile.surname}</h1>
-        <button>{localStorage.removeItem('username')}Logout</button>
+        <Link to = '/'>LogOut</Link>
             <h2>Saved Items:</h2>
             <div>
                 {profile.savedItems.length > 0 ? (
                     profile.savedItems.map((savedItem) => (
                         <div key={savedItem.id}>
-                            <img src={savedItem.src} alt={savedItem.name} style={{width:"15rem", height: "15rem"}}/>
+                            <img src={savedItem.src} alt={savedItem.name} style={{width:"20rem", height: "15rem"}}/>
                             <p>{savedItem.name}</p>
                             </div>
                     ))
