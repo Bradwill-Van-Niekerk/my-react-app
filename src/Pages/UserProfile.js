@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {useParams} from 'react-router-dom';
 import userData from '../userData'
+import Nav from "../Components/Nav";
 
 export default function UserProfile() {
     const {username}= useParams() //to get username from url
@@ -23,7 +24,9 @@ export default function UserProfile() {
 
     return (
         <div>
+             <Nav/>
             <h1> User Profile: {profile.name} {profile.surname}</h1>
+        <button>{localStorage.removeItem('username')}Logout</button>
             <h2>Saved Items:</h2>
             <div>
                 {profile.savedItems.length > 0 ? (

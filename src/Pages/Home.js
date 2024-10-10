@@ -1,5 +1,6 @@
 import React from 'react';
 import { WallPaper } from "../Image-data";
+import Nav from '../Components/Nav';
 
 export default function Start() {
 
@@ -8,8 +9,6 @@ export default function Start() {
             <div >
                 <div>
                     <img id="images" src={items.scr} alt ={items.name}/>
-                </div>
-                <div>
                     <p>{items.name}</p>
                 </div>
             </div>
@@ -18,6 +17,7 @@ export default function Start() {
 
     return (
         <body>
+             <Nav/>
             <h1>This Is the wallpaper site hope you have fun</h1>
             <div id="image-container">
                 {console.log(typeof (WallPaper))}

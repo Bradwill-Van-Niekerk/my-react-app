@@ -24,8 +24,10 @@ body {
   margin: 10px
 }
 nav {
-  display: flex;
+  display: grid;
+  grid-template-columns: 10% 10% 80%;
   background-color: aquamarine;
   text-align: right;
+  justify-content:space-evenly;
 }
 #new { }

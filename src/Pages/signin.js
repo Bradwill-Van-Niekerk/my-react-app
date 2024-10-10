@@ -1,36 +1,58 @@
-// import React, { useState } from "react";
+import React, { useState } from 'react';
+import  UsersData  from '../userData';
+import { useNavigate } from 'react-router-dom';
 
-// export default function SignIn() {
-//         const[count,setcount] = useState(0);
-//         // const {username}= useParams() //to get username from url
-        
-//     const [profile, setProfile] = useState(null);
-//     useEffect(() => {
-//        //find username by matching to name or surname
-//        const user = userData.find(user => user.name.toLowerCase() === username.toLowerCase());
-//        if (user){
-//         setProfile(user);//if user is found set profile to stat of user
-//        } else {
-//         setProfile(null); // no user found profile will be set to null
-//        }
-//     }, [username]);
-    
-//     if (!profile) {
-//         return <div>
-//             Profile not found
-//         </div>;
-//     }
-//     return(
-//         <div>
-        
-//         <h1>SignIn</h1>
-//         <label for username="Username">Username</label>
-//         <input type="text" for="Username"/>
-//         <label for= "Password">Password</label>
-//         <input type="password" for= "Password"/>
-//         <button type="submit" onClick={() => setcount(count + 1)}>Submit</button>
-//         {count}
-        
-//         </div>
-//     )
-// }
+export const SignIn = () => {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState(false);
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const user = UsersData.find(
+      (u) => u.name === username && u.surname === password
+    );
+
+    if (user) {
+      setSuccess(true);
+      setError('');
+      //to hold state till loging out
+      localStorage.setItem('username', username);
+      // Navigate to the WelcomePage with the username
+      navigate('/home', { state: { username } });
+      // Handle successful login
+    } else {
+      setSuccess(false);
+      setError('Invalid username or password');
+    }
+  };
+
+  return (
+    <div>
+      <h2>Sign In</h2>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>Username:</label>
+          <input
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        </div>
+        <div>
+          <label>Password:</label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+        {error && <p style={{ color: 'red' }}>{error}</p>}
+        {success && <p style={{ color: 'green' }}>Login successful!</p>}
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
+  );
+};

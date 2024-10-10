@@ -68,5 +68,57 @@ export const WallPaper = [
         scr: "https://i.postimg.cc/52ZMpdsL/Your-Name.jpg",
         name: "Your Name",
         id: 14
-    }
+    },
+    {
+        scr: "https://i.postimg.cc/mkmtQQQb/alucard-ai-art-5120x2880-19134.jpg",
+        name: "Hellsing",
+        id: 15
+    }, {
+        scr: "https://i.postimg.cc/9Qrck3jt/dope-sukuna-pink-5120x2880-16935.png",
+        name: "Jujusu kaisen",
+        id: 16
+    }, {
+        scr: "https://i.postimg.cc/xd5gNZch/gear-5-luffy-artwork-5k-5120x2880-18363.jpg",
+        name: "One Piece",
+        id: 17
+    }, {
+        scr: "https://i.postimg.cc/3rS6ckrV/gear-5-monkey-d-6001x3841-17522.jpg",
+        name: "One Piece",
+        id: 18
+    }, {
+        scr: "https://i.postimg.cc/NMP4pr8x/kakashi-hatake-ai-7680x4320-18785.jpg",
+        name: "Naruto",
+        id: 19
+    }, {
+        scr: "https://i.postimg.cc/PrNqgvWw/naruto-uzumaki-5120x2880-18710.jpg",
+        name: "Naruto",
+        id: 20
+    }, {
+        scr: "https://i.postimg.cc/Jhj0TwbY/nezuko-kamado-cute-5120x2880-18712.jpg",
+        name: "Demon Slayer",
+        id: 21
+    },
+    {
+        scr: "https://i.postimg.cc/g2QGFMz9/satoru-gojo-7680x4320-15227.png",
+        name: "Jujusu kaisen",
+        id: 22
+    }, {
+        scr: "https://i.postimg.cc/PJP6jMfc/solo-leveling-game-3840x2160-17908.jpg",
+        name: "Solo Leveling",
+        id: 23
+    }, {
+        scr: "https://i.postimg.cc/2SBPvCDJ/sukuna-purple-5120x2880-16958.png",
+        name: "Jujusu kaisen",
+        id: 24
+    }, {
+        scr: "https://i.postimg.cc/bryZD6SC/wind-breaker-5k-5120x2880-18815.jpg",
+        name: "wind Breaker",
+        id: 25
+    },
 ]
+
+// {
+//     scr: "",
+//     name: "",
+//     id: 1
+// },

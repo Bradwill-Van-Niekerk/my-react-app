@@ -1,8 +1,10 @@
 import React from 'react'
+import Nav from '../Components/Nav'
 
 export default function About() {
     return (
         <div>
+             <Nav/>
             <h1> About Page</h1>
             <p>Welcome to WallPaperHaven, your ultimate destination for stunning wallpapers that transform your digital and physical spaces! We believe that a beautiful wallpaper can inspire creativity, evoke emotions, and enhance the ambiance of any environment.
 
