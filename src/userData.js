@@ -2,7 +2,7 @@ const UsersData = [
     {
         name: "Jeff",
         surname: "Jones",
-        username: "SkyBlazer99",
+        username: "SkyBlazer",
         password: "G7j#4mT$qL8x",
         id: 1,
         savedItems: [ {
@@ -30,7 +30,7 @@ const UsersData = [
     {
         name: "John",
         surname: "Doe",
-        username: "TechWhiz_87",
+        username: "TechWhiz",
         password: "W!nterB3ach@21",
         id: 2,
         savedItems: [
@@ -61,7 +61,7 @@ const UsersData = [
     {
         name: "jerome",
         surname: "kavendish",
-        username: "CreativeNinja42",
+        username: "CreativeNinja",
         password: "R!verFlow89&Qz",
         id: 3,
         savedItems: [{
@@ -85,7 +85,7 @@ const UsersData = [
     {
         name: "hailey",
         surname: "september",
-        username: "CodeMasterX23",
+        username: "CodeMasterX",
         password: "T@bletS3tup^56",
         id: 4,
         savedItems: [{
