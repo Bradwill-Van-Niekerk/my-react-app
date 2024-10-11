@@ -1,3 +1,8 @@
+Just a basic SPA 
+The log in details is in the userData.js you can use any of the users login's to log in 
+I am still working on a sign up page and outer appeareance
+Website only holds the users data till they log out and has no other functionality 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
