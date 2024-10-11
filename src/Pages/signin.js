@@ -12,7 +12,7 @@ export const SignIn = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const user = UsersData.find(
-      (u) => u.name === username && u.surname === password
+      (u) => u.username === username && u.password === password
     );
 
     if (user) {

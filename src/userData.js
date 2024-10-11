@@ -2,6 +2,8 @@ const UsersData = [
     {
         name: "Jeff",
         surname: "Jones",
+        username: "SkyBlazer99",
+        password: "G7j#4mT$qL8x",
         id: 1,
         savedItems: [ {
             src: "https://i.postimg.cc/PrXf8j7q/Anime-illastration.jpg",
@@ -28,6 +30,8 @@ const UsersData = [
     {
         name: "John",
         surname: "Doe",
+        username: "TechWhiz_87",
+        password: "W!nterB3ach@21",
         id: 2,
         savedItems: [
             {
@@ -57,6 +61,8 @@ const UsersData = [
     {
         name: "jerome",
         surname: "kavendish",
+        username: "CreativeNinja42",
+        password: "R!verFlow89&Qz",
         id: 3,
         savedItems: [{
             src: "https://i.postimg.cc/PrXf8j7q/Anime-illastration.jpg",
@@ -79,6 +85,8 @@ const UsersData = [
     {
         name: "hailey",
         surname: "september",
+        username: "CodeMasterX23",
+        password: "T@bletS3tup^56",
         id: 4,
         savedItems: [{
             src: "https://i.postimg.cc/PrXf8j7q/Anime-illastration.jpg",
