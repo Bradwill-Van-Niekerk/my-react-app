@@ -8,7 +8,7 @@ export default function UserProfile() {
     const [profile, setProfile] = useState(null);
     useEffect(() => {
        //find username by matching to name or surname
-       const user = userData.find(user => user.name.toLowerCase() === username.toLowerCase());
+       const user = userData.find(user => user.username.toLowerCase() === username.toLowerCase());
        if (user){
         setProfile(user);//if user is found set profile to stat of user
        } else {
